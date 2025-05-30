@@ -122,7 +122,7 @@ The authors are using a generalized linear mixed model within a Bayesian framewo
 
 ## b.
 
-
+The authors did an exceptional job visually representing their statistics in figures because their x- and y-axes are in logical positions, depicting the relationship between the percentage of coral colonies bleached across all predictor variables. Their figure also includes the means of all variables (circles) and their 95% confidence intervals (thin black lines). Their figure also organizes which variables have a positive, negative, or no significant contribution to bleaching likelihoods in a linear fashion.
 
 ## c. 
 
