@@ -74,4 +74,8 @@ ggplot(data = steps_clean, # using steps_clean data frame
   theme(legend.position = "none") # removing legend
 ```
 
+## c. 
+
+Comparing step counts between morning shifts and non-morning shifts. The mean step counts of morning shifts (12,785) is higher than the mean step count of non-morning shifts (12,054).  
+
 
