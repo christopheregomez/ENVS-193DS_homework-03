@@ -78,4 +78,20 @@ ggplot(data = steps_clean, # using steps_clean data frame
 
 Comparing step counts between morning shifts and non-morning shifts. The mean step counts of morning shifts (12,785) is higher than the mean step count of non-morning shifts (12,054).  
 
+## d. 
+
+```{r}
+steps_summary <- steps_clean |> # make new object from "steps_clean"
+  group_by(Shift) |> # group by shift
+  summarize(mean = mean(number_of_steps), # calculate the mean
+            ci = mean_cl_normal(number_of_steps)) |> # calculate the 95% CI
+  mutate(mean = round(mean, 1), # round mean to one decimal
+         ci = round(ci, 1)) |> # round the CI to one decimal
+  gt() # make a gt table
+gt_tbl <- steps_summary |> # use the "step_summary" data frame
+    tab_header(title = "Steps Summary") # make a table header
+  
+gt_tbl
+```
+
 
