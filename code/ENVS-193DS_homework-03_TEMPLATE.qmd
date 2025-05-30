@@ -1,0 +1,34 @@
+---
+title: "Homework 03 Template"
+date: 2025-05-25
+author: "Chris Gomez"
+format: html
+toc: true
+execute: 
+  warning: false
+  message: false
+link: https://github.com/christopheregomez/ENVS-193DS_homework-03 
+---
+
+# Set up
+
+```{r}
+library(tidyverse)
+library(here)
+library(gt)
+library(janitor)
+library(readxl)
+library(png)
+library(knitr)
+library(rmarkdown)
+
+steps <- read_xlsx( # creating an object for my data
+  here("data", "work-steps.xlsx"),
+  sheet = "Sheet1")
+```
+
+# Problem 1. Personal data
+
+## a. 
+
+I could compare my mean step count at work between a morning shift and a non-morning shift because work is busier during a morning shift, so I think I take more steps during a morning shift. 
