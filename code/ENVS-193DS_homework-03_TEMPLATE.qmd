@@ -112,4 +112,26 @@ An affective visualization for my personal data would divide the paper in two wi
 
 My piece is a drawing which shows the difference in my steps at work between morning shifts and non-morning shifts which I color coded based on type of shift. I found Lorraine Woodruff-Long's warming strip quilt piece inspiring for my draft by using contrasting colors to differentiate groups and I had the idea to use dashed lines to represent steps walked.  
 
+# Problem 3. Statistical critique 
+
+## a. 
+
+The statistical test in this paper is a generalized linear mixed model. The response variable is percentage of coral bleached at a site and the predictor variables are temperature metrics, latitude, depth, and coral diversity. 
+
+## b.
+
+
+
+## c. 
+
+
+
+## d. 
+
+
+
+
+
+
+
 
