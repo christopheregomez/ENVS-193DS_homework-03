@@ -32,3 +32,46 @@ steps <- read_xlsx( # creating an object for my data
 ## a. 
 
 I could compare my mean step count at work between a morning shift and a non-morning shift because work is busier during a morning shift, so I think I take more steps during a morning shift. 
+
+## b. 
+
+```{r}
+steps_clean <- steps |> # making clean new object from steps
+  clean_names() |> # cleaning column names
+  mutate(opening_shift = case_when( # rename opening_shift column
+    opening_shift == "Yes" ~ "Morning", # renaming "Yes" to "morning"
+    opening_shift == "No" ~ "Non-morning")) |> # renaming "No" to "non-morning"
+  select(opening_shift, number_of_steps) # selecting certain columns 
+names(steps_clean)[names(steps_clean) == "opening_shift"] <- "Shift"
+
+t.test( # t-test
+  number_of_steps ~ Shift, # formula: response variable ~ grouping variable
+  var.equal = TRUE, # argument for equal/unequal variances
+  data = steps_clean) # using steps_clean data frame
+
+steps_ci <- steps_clean |> # making new steps_ci object from steps_clean
+  group_by(Shift) |> # grouping by "opening shift"
+  summarize(ci = mean_cl_normal(number_of_steps)) # calculating the 95% CI
+
+ggplot(data = steps_clean, # using steps_clean data frame 
+       aes(x = Shift, # x-axis
+           y = number_of_steps, # y-axis
+           color = Shift)) + # coloring points by opening_shift
+  geom_jitter(height = 0, # no jitter in the vertical direction 
+              width = 0.1, # smaller jitter in the horizontal direction 
+              alpha = 0.4, # making the points more transparent 
+              shape = 17) + # making the points triangles 
+  geom_pointrange(data = steps_ci, # using the steps_ci data frame
+                  aes(x = Shift, # x-axis
+                      y = ci$y, # y-axis
+                      ymax = ci$ymax, # upper bound of confidence interval
+                      ymin = ci$ymin)) + # lower bound of confidence interval 
+  labs(x = "Shift Type", # labeling x-axis
+       y = "Step Count") + # labeling y-axis
+  scale_color_manual(values = c("Morning" = "blue3", # coloring "Morning" blue
+                                "Non-morning" = "green3")) + # coloring "Non-morning" green
+  theme_bw() + # using a theme
+  theme(legend.position = "none") # removing legend
+```
+
+
