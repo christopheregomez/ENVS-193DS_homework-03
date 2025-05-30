@@ -100,4 +100,7 @@ gt_tbl
 
 An affective visualization for my personal data would divide the paper in two with a line and each side would include dashed lines to represent my steps walked. I would color code the dashed lines to compare the type of shift. For my morning shift data I would use orange and red to visualize the sunrise. Then for my non-morning shift data I would use blue and purple to visualize the afternoon and night. I would also show the difference in how many steps I take by increasing the density of dashed lines for morning shifts than non morning shifts. 
 
+## b. 
+
+![sketch](FullSizeRender.png)
 
