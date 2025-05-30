@@ -102,11 +102,11 @@ An affective visualization for my personal data would divide the paper in two wi
 
 ## b. 
 
-![sketch](FullSizeRender.png)
+![sketch](sketch.png)
 
 ## c. 
 
-![draft](IMG_8602.png)
+![draft](rough_draft.png)
 
 ## d. 
 
@@ -116,7 +116,9 @@ My piece is a drawing which shows the difference in my steps at work between mor
 
 ## a. 
 
-The statistical test in this paper is a generalized linear mixed model. The response variable is percentage of coral bleached at a site and the predictor variables are temperature metrics, latitude, depth, and coral diversity. 
+The authors are using a generalized linear mixed model within a Bayesian framework to predict the probability of coral bleaching by environmental variables such as temperature metrics, latitude, depth, and coral diversity. The response variable is the percentage of coral colonies bleached and the predictor variables are temperature metrics such as sea surface temperature (SST) and degree heating weeks (DHW), and the other abiotic variables are latitude, depth (m), and coral diversity. The red dots show a positive contribution to bleaching likelihood, blue dots show a negative contribution to bleaching likelihood, and white dots show no significant contribution to bleaching likelihood. 
+
+![figure](figure.png)
 
 ## b.
 
