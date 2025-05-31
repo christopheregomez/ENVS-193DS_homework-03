@@ -42,6 +42,6 @@ File structure:
 ```
 
 ## Rendered output
-The rendered template is here
+The rendered template: 
 
 
