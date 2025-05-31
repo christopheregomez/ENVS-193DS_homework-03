@@ -126,10 +126,9 @@ The authors did an exceptional job visually representing their statistics in fig
 
 ## c. 
 
-
+I think the authors had a decent data:ink ratio since their figure is clear but also include unnecessary tick marks and grid lines. However, the important data still stands out in their figure since they effectively color coded the means of each variable, categorizing them by level of likelihood to contribute to coral bleaching. It is also easy to see the 95% confidence interval of each variable. 
 
 ## d. 
-
 
 
 
