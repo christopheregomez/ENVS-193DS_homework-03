@@ -21,6 +21,10 @@ library(knitr)
 library(rmarkdown)
 ```
 ## Data and file information 
+There are two folders, a code folder and a data folder. All code is in the code folder, and all datasets are in the data folder. 
+
+In the code folder, there is a file called ENVS-193_homework-03_TEMPLATE which contains all code for this assignment. 
+
 File structure: 
 
 
