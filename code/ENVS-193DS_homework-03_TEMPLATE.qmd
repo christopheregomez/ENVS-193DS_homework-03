@@ -122,7 +122,7 @@ The authors are using a generalized linear mixed model within a Bayesian framewo
 
 ## b.
 
-The authors did an exceptional job visually representing their statistics in figures because their x- and y-axes are in logical positions, depicting the relationship between the percentage of coral colonies bleached across all predictor variables. Their figure also includes the means of all variables (circles) and their 95% confidence intervals (thin black lines). Their figure also organizes which variables have a positive, negative, or no significant contribution to bleaching likelihoods in a linear fashion.
+The authors did a good job visually representing their statistics in figures because their x- and y-axes are in logical positions, depicting the relationship between the percentage of coral colonies bleached across all predictor variables. Their figure also includes the means of all variables (circles) and their 95% confidence intervals (thin black lines). Their figure also organizes which variables have a positive, negative, or no significant contribution to bleaching likelihoods in a linear fashion.
 
 ## c. 
 
@@ -130,7 +130,7 @@ I think the authors had a decent data:ink ratio since their figure is clear but 
 
 ## d. 
 
-
+To make the figure look better I recommend removing the tick marks on the y-axis and the grid lines in the graph since both of these do not contribute to important data and the figure would look cleaner. I would also remove the 50% confidence intervals since these do not matter that much especially since the authors already included the 95% confidence intervals. This would also make the important data stand out more such as the means and 95% confidence intervals. However, I would not add anything extra to the figure since they already included the necessary data to address their goal.  
 
 
 
