@@ -42,7 +42,7 @@ steps_clean <- steps |> # making clean new object from steps
     opening_shift == "Yes" ~ "Morning", # renaming "Yes" to "morning"
     opening_shift == "No" ~ "Non-morning")) |> # renaming "No" to "non-morning"
   select(opening_shift, number_of_steps) # selecting certain columns 
-names(steps_clean)[names(steps_clean) == "opening_shift"] <- "Shift"
+names(steps_clean)[names(steps_clean) == "opening_shift"] <- "Shift" # renaming the "opening_shift" column to "Shift"
 
 t.test( # t-test
   number_of_steps ~ Shift, # formula: response variable ~ grouping variable
