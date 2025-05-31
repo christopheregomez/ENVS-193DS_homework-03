@@ -42,6 +42,7 @@ File structure:
 ```
 
 ## Rendered output
-The rendered template: 
+The rendered template is [here](https://christopheregomez.github.io/ENVS-193DS_homework-03/code/ENVS-193DS_homework-03_TEMPLATE.html).
+
 
 
