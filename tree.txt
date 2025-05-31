@@ -1,0 +1,15 @@
+[01;34m.[0m
+├── [00mENVS-193DS_homework-03.Rproj[0m
+├── [00mREADME.md[0m
+├── [01;34mcode[0m
+│   ├── [00mENVS-193DS_homework-03_TEMPLATE.html[0m
+│   ├── [00mENVS-193DS_homework-03_TEMPLATE.qmd[0m
+│   ├── [01;34mENVS-193DS_homework-03_TEMPLATE_files[0m
+│   ├── [00mfigure.png[0m
+│   ├── [00mrough_draft.png[0m
+│   └── [00msketch.png[0m
+├── [01;34mdata[0m
+│   └── [00mwork-steps.xlsx[0m
+└── [00mtree.txt[0m
+
+4 directories, 9 files

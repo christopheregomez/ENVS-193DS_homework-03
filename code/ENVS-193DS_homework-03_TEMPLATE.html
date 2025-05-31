@@ -95,6 +95,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#a.-1" id="toc-a.-1" class="nav-link" data-scroll-target="#a.-1">a.</a></li>
   <li><a href="#b.-1" id="toc-b.-1" class="nav-link" data-scroll-target="#b.-1">b.</a></li>
+  <li><a href="#c.-1" id="toc-c.-1" class="nav-link" data-scroll-target="#c.-1">c.&nbsp;</a></li>
+  <li><a href="#d.-1" id="toc-d.-1" class="nav-link" data-scroll-target="#d.-1">d.&nbsp;</a></li>
+  </ul></li>
+  <li><a href="#problem-3.-statistical-critique" id="toc-problem-3.-statistical-critique" class="nav-link" data-scroll-target="#problem-3.-statistical-critique">Problem 3. Statistical critique</a>
+  <ul class="collapse">
+  <li><a href="#a.-2" id="toc-a.-2" class="nav-link" data-scroll-target="#a.-2">a.</a></li>
+  <li><a href="#b.-2" id="toc-b.-2" class="nav-link" data-scroll-target="#b.-2">b.</a></li>
+  <li><a href="#c.-2" id="toc-c.-2" class="nav-link" data-scroll-target="#c.-2">c.&nbsp;</a></li>
+  <li><a href="#d.-2" id="toc-d.-2" class="nav-link" data-scroll-target="#d.-2">d.&nbsp;</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -164,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    opening_shift <span class="sc">==</span> <span class="st">"Yes"</span> <span class="sc">~</span> <span class="st">"Morning"</span>, <span class="co"># renaming "Yes" to "morning"</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    opening_shift <span class="sc">==</span> <span class="st">"No"</span> <span class="sc">~</span> <span class="st">"Non-morning"</span>)) <span class="sc">|&gt;</span> <span class="co"># renaming "No" to "non-morning"</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(opening_shift, number_of_steps) <span class="co"># selecting certain columns </span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(steps_clean)[<span class="fu">names</span>(steps_clean) <span class="sc">==</span> <span class="st">"opening_shift"</span>] <span class="ot">&lt;-</span> <span class="st">"Shift"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(steps_clean)[<span class="fu">names</span>(steps_clean) <span class="sc">==</span> <span class="st">"opening_shift"</span>] <span class="ot">&lt;-</span> <span class="st">"Shift"</span> <span class="co"># renaming the "opening_shift" column to "Shift"</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>( <span class="co"># t-test</span></span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  number_of_steps <span class="sc">~</span> Shift, <span class="co"># formula: response variable ~ grouping variable</span></span>
@@ -234,23 +243,23 @@ sample estimates:
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>gt_tbl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="auucuzcbaf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#auucuzcbaf table {
+<div id="kpppgyuabk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kpppgyuabk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#auucuzcbaf thead, #auucuzcbaf tbody, #auucuzcbaf tfoot, #auucuzcbaf tr, #auucuzcbaf td, #auucuzcbaf th {
+#kpppgyuabk thead, #kpppgyuabk tbody, #kpppgyuabk tfoot, #kpppgyuabk tr, #kpppgyuabk td, #kpppgyuabk th {
   border-style: none;
 }
 
-#auucuzcbaf p {
+#kpppgyuabk p {
   margin: 0;
   padding: 0;
 }
 
-#auucuzcbaf .gt_table {
+#kpppgyuabk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -276,12 +285,12 @@ sample estimates:
   border-left-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_caption {
+#kpppgyuabk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#auucuzcbaf .gt_title {
+#kpppgyuabk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -293,7 +302,7 @@ sample estimates:
   border-bottom-width: 0;
 }
 
-#auucuzcbaf .gt_subtitle {
+#kpppgyuabk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -305,7 +314,7 @@ sample estimates:
   border-top-width: 0;
 }
 
-#auucuzcbaf .gt_heading {
+#kpppgyuabk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -317,13 +326,13 @@ sample estimates:
   border-right-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_bottom_border {
+#kpppgyuabk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_col_headings {
+#kpppgyuabk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -338,7 +347,7 @@ sample estimates:
   border-right-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_col_heading {
+#kpppgyuabk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -358,7 +367,7 @@ sample estimates:
   overflow-x: hidden;
 }
 
-#auucuzcbaf .gt_column_spanner_outer {
+#kpppgyuabk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -370,15 +379,15 @@ sample estimates:
   padding-right: 4px;
 }
 
-#auucuzcbaf .gt_column_spanner_outer:first-child {
+#kpppgyuabk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#auucuzcbaf .gt_column_spanner_outer:last-child {
+#kpppgyuabk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#auucuzcbaf .gt_column_spanner {
+#kpppgyuabk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -390,11 +399,11 @@ sample estimates:
   width: 100%;
 }
 
-#auucuzcbaf .gt_spanner_row {
+#kpppgyuabk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#auucuzcbaf .gt_group_heading {
+#kpppgyuabk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -420,7 +429,7 @@ sample estimates:
   text-align: left;
 }
 
-#auucuzcbaf .gt_empty_group_heading {
+#kpppgyuabk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -435,15 +444,15 @@ sample estimates:
   vertical-align: middle;
 }
 
-#auucuzcbaf .gt_from_md > :first-child {
+#kpppgyuabk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#auucuzcbaf .gt_from_md > :last-child {
+#kpppgyuabk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#auucuzcbaf .gt_row {
+#kpppgyuabk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -462,7 +471,7 @@ sample estimates:
   overflow-x: hidden;
 }
 
-#auucuzcbaf .gt_stub {
+#kpppgyuabk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -475,7 +484,7 @@ sample estimates:
   padding-right: 5px;
 }
 
-#auucuzcbaf .gt_stub_row_group {
+#kpppgyuabk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -489,15 +498,15 @@ sample estimates:
   vertical-align: top;
 }
 
-#auucuzcbaf .gt_row_group_first td {
+#kpppgyuabk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#auucuzcbaf .gt_row_group_first th {
+#kpppgyuabk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#auucuzcbaf .gt_summary_row {
+#kpppgyuabk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -507,16 +516,16 @@ sample estimates:
   padding-right: 5px;
 }
 
-#auucuzcbaf .gt_first_summary_row {
+#kpppgyuabk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_first_summary_row.thick {
+#kpppgyuabk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#auucuzcbaf .gt_last_summary_row {
+#kpppgyuabk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -526,7 +535,7 @@ sample estimates:
   border-bottom-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_grand_summary_row {
+#kpppgyuabk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -536,7 +545,7 @@ sample estimates:
   padding-right: 5px;
 }
 
-#auucuzcbaf .gt_first_grand_summary_row {
+#kpppgyuabk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -546,7 +555,7 @@ sample estimates:
   border-top-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_last_grand_summary_row_top {
+#kpppgyuabk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -556,11 +565,11 @@ sample estimates:
   border-bottom-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_striped {
+#kpppgyuabk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#auucuzcbaf .gt_table_body {
+#kpppgyuabk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -569,7 +578,7 @@ sample estimates:
   border-bottom-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_footnotes {
+#kpppgyuabk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -583,7 +592,7 @@ sample estimates:
   border-right-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_footnote {
+#kpppgyuabk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -592,7 +601,7 @@ sample estimates:
   padding-right: 5px;
 }
 
-#auucuzcbaf .gt_sourcenotes {
+#kpppgyuabk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -606,7 +615,7 @@ sample estimates:
   border-right-color: #D3D3D3;
 }
 
-#auucuzcbaf .gt_sourcenote {
+#kpppgyuabk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -614,72 +623,72 @@ sample estimates:
   padding-right: 5px;
 }
 
-#auucuzcbaf .gt_left {
+#kpppgyuabk .gt_left {
   text-align: left;
 }
 
-#auucuzcbaf .gt_center {
+#kpppgyuabk .gt_center {
   text-align: center;
 }
 
-#auucuzcbaf .gt_right {
+#kpppgyuabk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#auucuzcbaf .gt_font_normal {
+#kpppgyuabk .gt_font_normal {
   font-weight: normal;
 }
 
-#auucuzcbaf .gt_font_bold {
+#kpppgyuabk .gt_font_bold {
   font-weight: bold;
 }
 
-#auucuzcbaf .gt_font_italic {
+#kpppgyuabk .gt_font_italic {
   font-style: italic;
 }
 
-#auucuzcbaf .gt_super {
+#kpppgyuabk .gt_super {
   font-size: 65%;
 }
 
-#auucuzcbaf .gt_footnote_marks {
+#kpppgyuabk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#auucuzcbaf .gt_asterisk {
+#kpppgyuabk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#auucuzcbaf .gt_indent_1 {
+#kpppgyuabk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#auucuzcbaf .gt_indent_2 {
+#kpppgyuabk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#auucuzcbaf .gt_indent_3 {
+#kpppgyuabk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#auucuzcbaf .gt_indent_4 {
+#kpppgyuabk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#auucuzcbaf .gt_indent_5 {
+#kpppgyuabk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#auucuzcbaf .katex-display {
+#kpppgyuabk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#auucuzcbaf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#kpppgyuabk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -724,10 +733,48 @@ sample estimates:
 <h2 class="anchored" data-anchor-id="b.-1">b.</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="FullSizeRender.png" class="img-fluid figure-img"></p>
+<p><img src="sketch.png" class="img-fluid figure-img"></p>
 <figcaption>sketch</figcaption>
 </figure>
 </div>
+</section>
+<section id="c.-1" class="level2">
+<h2 class="anchored" data-anchor-id="c.-1">c.&nbsp;</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rough_draft.png" class="img-fluid figure-img"></p>
+<figcaption>draft</figcaption>
+</figure>
+</div>
+</section>
+<section id="d.-1" class="level2">
+<h2 class="anchored" data-anchor-id="d.-1">d.&nbsp;</h2>
+<p>My piece is a drawing which shows the difference in my steps at work between morning shifts and non-morning shifts which I color coded based on type of shift. I found Lorraine Woodruff-Long’s warming strip quilt piece inspiring for my draft by using contrasting colors to differentiate groups and I had the idea to use dashed lines to represent steps walked.</p>
+</section>
+</section>
+<section id="problem-3.-statistical-critique" class="level1">
+<h1>Problem 3. Statistical critique</h1>
+<section id="a.-2" class="level2">
+<h2 class="anchored" data-anchor-id="a.-2">a.</h2>
+<p>The authors are using a generalized linear mixed model within a Bayesian framework to predict the probability of coral bleaching by environmental variables such as temperature metrics, latitude, depth, and coral diversity. The response variable is the percentage of coral colonies bleached and the predictor variables are temperature metrics such as sea surface temperature (SST) and degree heating weeks (DHW), and the other abiotic variables are latitude, depth (m), and coral diversity. The red dots show a positive contribution to bleaching likelihood, blue dots show a negative contribution to bleaching likelihood, and white dots show no significant contribution to bleaching likelihood.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figure.png" class="img-fluid figure-img"></p>
+<figcaption>figure</figcaption>
+</figure>
+</div>
+</section>
+<section id="b.-2" class="level2">
+<h2 class="anchored" data-anchor-id="b.-2">b.</h2>
+<p>The authors did a good job visually representing their statistics in figures because their x- and y-axes are in logical positions, depicting the relationship between the percentage of coral colonies bleached across all predictor variables. Their figure also includes the means of all variables (circles) and their 95% confidence intervals (thin black lines). Their figure also organizes which variables have a positive, negative, or no significant contribution to bleaching likelihoods in a linear fashion.</p>
+</section>
+<section id="c.-2" class="level2">
+<h2 class="anchored" data-anchor-id="c.-2">c.&nbsp;</h2>
+<p>I think the authors had a decent data:ink ratio since their figure is clear but also include unnecessary tick marks and grid lines. However, the important data still stands out in their figure since they effectively color coded the means of each variable, categorizing them by level of likelihood to contribute to coral bleaching. It is also easy to see the 95% confidence interval of each variable.</p>
+</section>
+<section id="d.-2" class="level2">
+<h2 class="anchored" data-anchor-id="d.-2">d.&nbsp;</h2>
+<p>To make the figure look better I recommend removing the tick marks on the y-axis and the grid lines in the graph since both of these do not contribute to important data and the figure would look cleaner. I would also remove the 50% confidence intervals since these do not matter that much especially since the authors already included the 95% confidence intervals. This would also make the important data stand out more such as the means and 95% confidence intervals. However, I would not add anything extra to the figure since they already included the necessary data to address their goal.</p>
 </section>
 </section>
 
